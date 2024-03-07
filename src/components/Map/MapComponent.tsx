@@ -87,7 +87,6 @@ const MapComponent = () => {
 			select.on('select', (event) => {
 				if (event.selected.length > 0) {
 					const feature = event.selected[0];
-					const coordinates = feature.getGeometry().getCoordinates();
 				}
 			});
 
