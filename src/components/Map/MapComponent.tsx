@@ -27,7 +27,7 @@ const MapComponent = () => {
 	const [geometryType, setGeometryType] = useState<any>('Polygon');
 	const [loading, setLoading] = useState<any>(true);
 	const mapRef = useRef<HTMLDivElement>(null);
-	const tooltipRef = useRef<HTMLDivElement>(null);
+	const tooltipRef = useRef<any>(null);
 	const [isVisibleTooltip, setIsVisibleTooltip] = useState(true);
 
 	//* temp Data for Map sections
