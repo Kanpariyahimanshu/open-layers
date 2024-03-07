@@ -103,7 +103,7 @@ const MapComponent = () => {
 
 			draw.on('drawend', (event) => {
 				const feature = event.feature;
-				const geometry = feature.getGeometry();
+				const geometry: any = feature.getGeometry();
 				let measurement = '';
 
 				if (geometry instanceof LineString) {
